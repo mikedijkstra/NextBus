@@ -1,0 +1,66 @@
+<!doctype html>
+<html manifest="/nextbus.manifest">
+<head id="netbus-micdijkstra-com" data-template-set="html5-reset">
+	<meta charset="utf-8">
+	<title>NextBus</title>
+	<meta content='width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0' name='viewport'> 
+  <meta content='width=device-width; initial-scale=1.0' name='viewport'>
+	<link rel="shortcut icon" href="_/img/favicon.ico">
+	<link rel="apple-touch-icon" href="_/img/apple-touch-icon.png">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+	<link rel="stylesheet" href="_/css/jquery.mobile-1.0b1.min.css">
+	<link rel="stylesheet" href="_/css/style.css">
+</head>
+
+<body>
+<div  data-role="page" id="work" data-title="NextBus"> 
+	<div  data-role="header">
+		<h1>NextBus</h1>
+		<a href="#home" data-transition="flip" data-icon="home">Home</a>
+		<a class="refresh" data-transition="flip" data-icon="refresh">Refresh</a>
+	</div> <!-- end header --> 
+	<div  data-role="content">		
+		<div class="time_block">	
+			<h1>leaves #Work at <span id="nextWorkTime"></span></h1>
+			<div id="nextBusWork"></div>
+		</div>
+		<ul data-role="listview">
+			<li id="WorkLaterBus">LaterBus at <span id="laterWorkTime"></span> <span id="laterBusWork" class="ui-li-count ui-btn-up-c ui-btn-corner-all"></span></li>
+			<li id="WorkEvenLaterBus">EvenLaterBus at <span id="evenLaterWorkTime"></span><span id="evenLaterBusWork" class="ui-li-count ui-btn-up-c ui-btn-corner-all"></span></li>
+			<li id="WorkEvenEvenLaterBus">EvenEvenLaterBus at <span id="evenEvenLaterWorkTime"></span> <span id="evenEvenLaterBusWork" class="ui-li-count ui-btn-up-c ui-btn-corner-all"></span></li>
+		</ul>
+	</div> <!-- end content -->
+	<div  data-role="footer" data-position="fixed">
+		<h4>#Work</h4>
+	</div> <!-- end footer -->
+</div> <!-- end page -->
+
+<div  data-role="page" id="home" data-title="NextBus"> 
+	<div  data-role="header">
+		<h1>NextBus</h1>
+		<a href="#work" data-transition="flip" data-icon="grid">Work</a>
+		<a class="refresh" data-transition="flip" data-icon="refresh">Refresh</a>
+	</div> <!-- end header -->
+	<div  data-role="content">
+		<div class="time_block">
+			<h1>leaves #Home at <span id="nextHomeTime"></span></h1>
+			<div id="nextBusHome"></div>
+		</div> <!-- end time_block -->
+		<ul data-role="listview">
+			<li id="HomeLaterBus">LaterBus at <span id="laterHomeTime"></span> <span id="laterBusHome" class="ui-li-count ui-btn-up-c ui-btn-corner-all"></span></li>
+			<li id="HomeEvenLaterBus">EvenLaterBus at <span id="evenLaterHomeTime"></span><span id="evenLaterBusHome" class="ui-li-count ui-btn-up-c ui-btn-corner-all"></span></li>
+			<li id="HomeEvenEvenLaterBus">EvenEvenLaterBus at <span id="evenEvenLaterHomeTime"></span> <span id="evenEvenLaterBusHome" class="ui-li-count ui-btn-up-c ui-btn-corner-all"></span></li>						
+		</ul>
+	</div> <!-- end content -->
+	<div  data-role="footer" data-position="fixed">
+		<h4>#Home</h4>
+	</div> <!-- end footer -->
+</div> <!-- end page -->
+
+<script src="_/js/jquery-1.5.1.min.js"></script>
+<script src="_/js/countdown.js"></script>
+<script src="_/js/jquery.mobile-1.0b1.min.js"></script>
+<script src="_/js/functions.js"></script>  
+</body>
+</html>
