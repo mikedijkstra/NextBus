@@ -14,3 +14,4 @@ NextBus is a very simple offline HTML web app that tells you when the next bus i
 4. Open on your iPhone
 5. Bookmark to your home screen
 6. Never be late for your bus again!
+
